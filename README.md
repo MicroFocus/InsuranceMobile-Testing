@@ -1,10 +1,10 @@
 # InsuranceMobile
 
-InsuranceMobile is a sample mobile application available for Android and iOS provided by [Micro Focus][1]. This repository contains the [Silk Test][2] sample projects with UI test scripts for that app.
+InsuranceMobile is a sample mobile application available for Android and iOS provided by [Micro Focus][1]. This repository contains [Silk Test][2] sample projects with UI test scripts for that app.
 
 The source code of the app can be found here:
-* Android: https://https://github.com/MicroFocus/InsuranceMobile-Android
-* iOS: https://https://github.com/MicroFocus/InsuranceMobile-iOS
+* Android: https://github.com/MicroFocus/InsuranceMobile-Android
+* iOS: https://github.com/MicroFocus/InsuranceMobile-iOS
 
 
 ## Getting Started
