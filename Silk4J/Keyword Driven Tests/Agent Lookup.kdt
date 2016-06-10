@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Keyword xmlns="http://www.borland.com/silk/Keyword">
+    <InvokeKeyword name="Start application" />
+    <InvokeKeyword name="Login">
+        <Argument value="john.smith@gmail.com" />
+        <Argument value="john" />
+    </InvokeKeyword>
+    <InvokeKeyword name="Go to agent lookup" />
+    <InvokeKeyword name="Search agents by zip code">
+        <Argument value="78731" />
+    </InvokeKeyword>
+    <InvokeKeyword name="Verify agent exists">
+        <Argument value="Alice Walker" />
+    </InvokeKeyword>
+    <InvokeKeyword name="Go home" />
+    <InvokeKeyword name="Logout" />
+</Keyword>

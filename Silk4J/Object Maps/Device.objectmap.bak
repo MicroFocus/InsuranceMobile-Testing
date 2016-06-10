@@ -1,0 +1,78 @@
+<ObjectMap version="1">
+  <ObjectMapEntry id="Device" locator="/MobileDevice">
+<<<<<<< .mine
+    <ObjectMapEntry id="Agent Lookup (Android)" locator="//MobileObject[@caption=&apos;Agent Lookup&apos;]"/>
+    <ObjectMapEntry id="Agent Lookup (iOS)" locator="//MobileObject[@caption=&apos;Agent Lookup&apos;]"/>
+    <ObjectMapEntry id="Agent Name (Android)" locator="//MobileObject[@resource-id=&apos;silktest.insurancemobile:id/agent_list_item_text&apos;]"/>
+    <ObjectMapEntry id="Agent Name (iOS)" locator="//MobileObject[@label=&apos;Alice Walker&apos;]"/>
+    <ObjectMapEntry id="Back (Android)" locator="//MobileObject[@content-desc=&apos;Navigate up&apos;]"/>
+    <ObjectMapEntry id="Back (iOS)" locator="//MobileObject[@name=&apos;Back&apos;]"/>
+    <ObjectMapEntry id="Email (Android)" locator="//MobileObject[@resource-id=&apos;silktest.insurancemobile:id/email&apos;]"/>
+    <ObjectMapEntry id="Email (iOS)" locator="//MobileObject[@caption=&apos;Email&apos;]"/>
+    <ObjectMapEntry id="Login (Android)" locator="//MobileObject[@resource-id=&apos;silktest.insurancemobile:id/log_in_button&apos;]"/>
+    <ObjectMapEntry id="Login (iOS)" locator="//MobileObject[@name=&apos;Login&apos;][3]"/>
+    <ObjectMapEntry id="Logout (Android)" locator="//MobileObject[@caption=&apos;Logout&apos;]"/>
+    <ObjectMapEntry id="Logout (iOS)" locator="//MobileObject[@caption=&apos;Logout&apos;]"/>
+    <ObjectMapEntry id="Menu (Android)" locator="//MobileObject[@content-desc=&apos;drawer_open&apos;]"/>
+    <ObjectMapEntry id="Menu (iOS)" locator="//MobileObject[@name=&apos;menu&apos;]"/>
+    <ObjectMapEntry id="Password (Android)" locator="//MobileObject[@resource-id=&apos;silktest.insurancemobile:id/password&apos;]"/>
+    <ObjectMapEntry id="Password (iOS)" locator="//MobileObject[@caption=&apos;Password&apos;]"/>
+    <ObjectMapEntry id="Search (Android)" locator="//MobileObject[@resource-id=&apos;silktest.insurancemobile:id/search_by_location_button&apos;]"/>
+    <ObjectMapEntry id="Search (iOS)" locator="//MobileObject[@name=&apos;Search&apos;][2]"/>
+    <ObjectMapEntry id="silktest insurancemobile id agent_search_name" locator="//MobileTextField[@resource-id=&apos;silktest.insurancemobile:id/agent_search_name&apos;]"/>
+    <ObjectMapEntry id="silktest insurancemobile id agent_search_zip" locator="//MobileTextField[@resource-id=&apos;silktest.insurancemobile:id/agent_search_zip&apos;]"/>
+    <ObjectMapEntry id="silktest insurancemobile id email" locator="//MobileTextField[@resource-id=&apos;silktest.insurancemobile:id/email&apos;]"/>
+    <ObjectMapEntry id="silktest insurancemobile id password" locator="//MobileTextField[@resource-id=&apos;silktest.insurancemobile:id/password&apos;]"/>
+    <ObjectMapEntry id="Zip Code (Android)" locator="//MobileObject[@resource-id=&apos;silktest.insurancemobile:id/agent_search_zip&apos;]"/>
+    <ObjectMapEntry id="Zip Code (iOS)" locator="//MobileObject[@caption=&apos;Zip Code&apos;]"/>
+||||||| .r89720
+    <ObjectMapEntry id="Agent Lookup (Android)" locator="//MobileObject[@caption='Agent Lookup']" />
+    <ObjectMapEntry id="Agent Lookup (iOS)" locator="//MobileObject[@caption='Agent Lookup']" />
+    <ObjectMapEntry id="Agent Name (Android)" locator="//MobileObject[@resource-id='silktest.insurancemobile:id/agent_list_item_text']" />
+    <ObjectMapEntry id="Agent Name (iOS)" locator="//MobileObject[@label='Alice Walker']" />
+    <ObjectMapEntry id="Back (Android)" locator="//MobileObject[@content-desc='Navigate up']" />
+    <ObjectMapEntry id="Back (iOS)" locator="//MobileObject[@name='Back']" />
+    <ObjectMapEntry id="Email (Android)" locator="//MobileObject[@resource-id='silktest.insurancemobile:id/email']" />
+    <ObjectMapEntry id="Email (iOS)" locator="//MobileObject[@caption='Email']" />
+    <ObjectMapEntry id="Login (Android)" locator="//MobileObject[@resource-id='silktest.insurancemobile:id/log_in_button']" />
+    <ObjectMapEntry id="Login (iOS)" locator="//MobileObject[@name='Login'][3]" />
+    <ObjectMapEntry id="Logout (Android)" locator="//MobileObject[@caption='Logout']" />
+    <ObjectMapEntry id="Logout (iOS)" locator="//MobileObject[@caption='Logout']" />
+    <ObjectMapEntry id="Menu (Android)" locator="//MobileObject[@content-desc='drawer_open']" />
+    <ObjectMapEntry id="Menu (iOS)" locator="//MobileObject[@name='menu']" />
+    <ObjectMapEntry id="Password (Android)" locator="//MobileObject[@resource-id='silktest.insurancemobile:id/password']" />
+    <ObjectMapEntry id="Password (iOS)" locator="//MobileObject[@caption='Password']" />
+    <ObjectMapEntry id="Search (Android)" locator="//MobileObject[@resource-id='silktest.insurancemobile:id/search_by_location_button']" />
+    <ObjectMapEntry id="Search (iOS)" locator="//MobileObject[@name='Search'][2]" />
+    <ObjectMapEntry id="Zip Code (Android)" locator="//MobileObject[@resource-id='silktest.insurancemobile:id/agent_search_zip']" />
+    <ObjectMapEntry id="Zip Code (iOS)" locator="//MobileObject[@caption='Zip Code']" />
+=======
+    <ObjectMapEntry id="Agent Lookup (Android)" locator="//MobileObject[@caption=&apos;Agent Lookup&apos;]"/>
+    <ObjectMapEntry id="Agent Lookup (iOS)" locator="//MobileObject[@caption=&apos;Agent Lookup&apos;]"/>
+    <ObjectMapEntry id="Agent Name (Android)" locator="//MobileObject[@resource-id=&apos;silktest.insurancemobile:id/agent_list_item_text&apos;]"/>
+    <ObjectMapEntry id="Agent Name (iOS)" locator="//MobileObject[@label=&apos;Alice Walker&apos;]"/>
+    <ObjectMapEntry id="Agent Search Name (Android)" locator="//MobileTextField[@resource-id=&apos;silktest.insurancemobile:id/agent_search_name&apos;]"/>
+    <ObjectMapEntry id="Agent Search Name (iOS)" locator="//MobileObject[@caption=&apos;Name&apos;]"/>
+    <ObjectMapEntry id="Back (Android)" locator="//MobileObject[@content-desc=&apos;Navigate up&apos;]"/>
+    <ObjectMapEntry id="Back (iOS)" locator="//MobileObject[@name=&apos;Back&apos;]"/>
+    <ObjectMapEntry id="best" locator="//MobileObject[@name=&apos;best&apos;]"/>
+    <ObjectMapEntry id="Email (Android)" locator="//MobileObject[@resource-id=&apos;silktest.insurancemobile:id/email&apos;]"/>
+    <ObjectMapEntry id="Email (iOS)" locator="//MobileObject[@caption=&apos;Email&apos;]"/>
+    <ObjectMapEntry id="Login (Android)" locator="//MobileObject[@resource-id=&apos;silktest.insurancemobile:id/log_in_button&apos;]"/>
+    <ObjectMapEntry id="Login (iOS)" locator="//MobileObject[@name=&apos;Login&apos;][3]"/>
+    <ObjectMapEntry id="Logout (Android)" locator="//MobileObject[@caption=&apos;Logout&apos;]"/>
+    <ObjectMapEntry id="Logout (iOS)" locator="//MobileObject[@caption=&apos;Logout&apos;]"/>
+    <ObjectMapEntry id="Menu (Android)" locator="//MobileObject[@content-desc=&apos;drawer_open&apos;]"/>
+    <ObjectMapEntry id="Menu (iOS)" locator="//MobileObject[@name=&apos;menu&apos;]"/>
+    <ObjectMapEntry id="Password (Android)" locator="//MobileObject[@resource-id=&apos;silktest.insurancemobile:id/password&apos;]"/>
+    <ObjectMapEntry id="Password (iOS)" locator="//MobileObject[@caption=&apos;Password&apos;]"/>
+    <ObjectMapEntry id="Search" locator="//MobileObject[@name=&apos;Search&apos;][4]"/>
+    <ObjectMapEntry id="Search by Location (Android)" locator="//MobileObject[@resource-id=&apos;silktest.insurancemobile:id/search_by_location_button&apos;]"/>
+    <ObjectMapEntry id="Search by Location (iOS)" locator="//MobileObject[@name=&apos;Search&apos;][2]"/>
+    <ObjectMapEntry id="Search by Name (Android)" locator="//MobileObject[@resource-id=&apos;silktest.insurancemobile:id/search_by_name_button&apos;]"/>
+    <ObjectMapEntry id="Search by Name (iOS)" locator="//MobileObject[@name=&apos;Search&apos;][3]"/>
+    <ObjectMapEntry id="Zip Code (Android)" locator="//MobileObject[@resource-id=&apos;silktest.insurancemobile:id/agent_search_zip&apos;]"/>
+    <ObjectMapEntry id="Zip Code (iOS)" locator="//MobileObject[@caption=&apos;Zip Code&apos;]"/>
+>>>>>>> .r89902
+  </ObjectMapEntry>
+</ObjectMap>

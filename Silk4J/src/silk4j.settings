@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<recorderProject version="17.0">
+  <applicationConfiguration>
+    <connectionString>deviceName=Nexus 6;platformName=Android;host=borlandbook1;app=C:\apps\InsuranceMobile.apk</connectionString>
+    <baseStateInfo>
+      <locator>/MobileDevice</locator>
+    </baseStateInfo>
+  </applicationConfiguration>
+  <agentOptions>
+    <entry>
+      <string>OPT_TRUELOG_SCREENSHOT_MODE</string>
+      <int>1</int>
+    </entry>
+    <entry>
+      <string>OPT_ASSET_NAMESPACE</string>
+      <string>Mobile - InsuranceMobile (xDevice)</string>
+    </entry>
+    <entry>
+      <string>OPT_PLAYBACK_STATUS_DIALOG_SCREENSHOTS</string>
+      <boolean>true</boolean>
+    </entry>
+  </agentOptions>
+</recorderProject>

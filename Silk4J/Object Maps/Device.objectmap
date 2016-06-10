@@ -1,0 +1,61 @@
+<ObjectMap version="1">
+  <ObjectMapEntry id="Device" locator="/MobileDevice">
+    <ObjectMapEntry id="36" locator="//MobileTextField[@caption=&apos;36&apos;]"/>
+    <ObjectMapEntry id="Agent Lookup (Android)" locator="//MobileObject[@caption=&apos;Agent Lookup&apos;]"/>
+    <ObjectMapEntry id="Agent Lookup (iOS)" locator="//MobileObject[@caption=&apos;Agent Lookup&apos;]"/>
+    <ObjectMapEntry id="Agent Name (Android)" locator="//MobileObject[@resource-id=&apos;silktest.insurancemobile:id/agent_list_item_text&apos;]"/>
+    <ObjectMapEntry id="Agent Name (iOS)" locator="//MobileObject[@label=&apos;Alice Walker&apos;]"/>
+    <ObjectMapEntry id="Agent Search Name (Android)" locator="//MobileTextField[@resource-id=&apos;silktest.insurancemobile:id/agent_search_name&apos;]"/>
+    <ObjectMapEntry id="Agent Search Name (iOS)" locator="//MobileObject[@caption=&apos;Name&apos;]"/>
+    <ObjectMapEntry id="Auto Quote" locator="//MobileObject[@caption=&apos;Auto Quote&apos;]"/>
+    <ObjectMapEntry id="Automobile Information" locator="//MobileObject[@name=&apos;Automobile Information&apos;][3]"/>
+    <ObjectMapEntry id="Back (Android)" locator="//MobileObject[@content-desc=&apos;Navigate up&apos;]"/>
+    <ObjectMapEntry id="Back (iOS)" locator="//MobileObject[@name=&apos;Back&apos;]"/>
+    <ObjectMapEntry id="best" locator="//MobileObject[@name=&apos;best&apos;]"/>
+    <ObjectMapEntry id="Buick" locator="//MobileObject[@caption=&apos;Buick&apos;]"/>
+    <ObjectMapEntry id="Car" locator="//MobileObject[@name=&apos;Car&apos;]"/>
+    <ObjectMapEntry id="Driving Record" locator="//MobileObject[@name=&apos;Driving Record&apos;][3]"/>
+    <ObjectMapEntry id="Electra" locator="//MobileObject[@caption=&apos;Electra&apos;]"/>
+    <ObjectMapEntry id="Email (Android)" locator="//MobileObject[@resource-id=&apos;silktest.insurancemobile:id/email&apos;]"/>
+    <ObjectMapEntry id="Email (iOS)" locator="//MobileObject[@caption=&apos;Email&apos;]"/>
+    <ObjectMapEntry id="Good" locator="//MobileObject[@name=&apos;Good&apos;]"/>
+    <ObjectMapEntry id="Login (Android)" locator="//MobileObject[@resource-id=&apos;silktest.insurancemobile:id/log_in_button&apos;]"/>
+    <ObjectMapEntry id="Login (iOS)" locator="//MobileObject[@name=&apos;Login&apos;][3]"/>
+    <ObjectMapEntry id="Logout (Android)" locator="//MobileObject[@caption=&apos;Logout&apos;]"/>
+    <ObjectMapEntry id="Logout (iOS)" locator="//MobileObject[@caption=&apos;Logout&apos;]"/>
+    <ObjectMapEntry id="Male" locator="//MobileObject[@name=&apos;Male&apos;]"/>
+    <ObjectMapEntry id="Menu (Android)" locator="//MobileObject[@content-desc=&apos;drawer_open&apos;]"/>
+    <ObjectMapEntry id="Menu (iOS)" locator="//MobileObject[@name=&apos;menu&apos;]"/>
+    <ObjectMapEntry id="Own" locator="//MobileObject[@caption=&apos;Own&apos;]"/>
+    <ObjectMapEntry id="Password (Android)" locator="//MobileObject[@resource-id=&apos;silktest.insurancemobile:id/password&apos;]"/>
+    <ObjectMapEntry id="Password (iOS)" locator="//MobileObject[@caption=&apos;Password&apos;]"/>
+    <ObjectMapEntry id="Search" locator="//MobileObject[@name=&apos;Search&apos;][4]"/>
+    <ObjectMapEntry id="Search (Android)" locator="//MobileObject[@resource-id=&apos;silktest.insurancemobile:id/search_by_location_button&apos;]"/>
+    <ObjectMapEntry id="Search (iOS)" locator="//MobileObject[@name=&apos;Search&apos;][2]"/>
+    <ObjectMapEntry id="Search by Location (Android)" locator="//MobileObject[@resource-id=&apos;silktest.insurancemobile:id/search_by_location_button&apos;]"/>
+    <ObjectMapEntry id="Search by Location (iOS)" locator="//MobileObject[@name=&apos;Search&apos;][2]"/>
+    <ObjectMapEntry id="Search by Name (Android)" locator="//MobileObject[@resource-id=&apos;silktest.insurancemobile:id/search_by_name_button&apos;]"/>
+    <ObjectMapEntry id="Search by Name (iOS)" locator="//MobileObject[@name=&apos;Search&apos;][3]"/>
+    <ObjectMapEntry id="Select" locator="//MobileObject[@name=&apos;Select&apos;]"/>
+    <ObjectMapEntry id="silktest insurancemobile id agent_search_name" locator="//MobileTextField[@resource-id=&apos;silktest.insurancemobile:id/agent_search_name&apos;]"/>
+    <ObjectMapEntry id="silktest insurancemobile id agent_search_zip" locator="//MobileTextField[@resource-id=&apos;silktest.insurancemobile:id/agent_search_zip&apos;]"/>
+    <ObjectMapEntry id="silktest insurancemobile id autoquote_car_year" locator="//MobileTextField[@resource-id=&apos;silktest.insurancemobile:id/autoquote_car_year&apos;]"/>
+    <ObjectMapEntry id="silktest insurancemobile id autoquote_zip" locator="//MobileTextField[@resource-id=&apos;silktest.insurancemobile:id/autoquote_zip&apos;]"/>
+    <ObjectMapEntry id="silktest insurancemobile id car_make" locator="//MobileObject[@resource-id=&apos;silktest.insurancemobile:id/car_make&apos;]"/>
+    <ObjectMapEntry id="silktest insurancemobile id car_model" locator="//MobileObject[@resource-id=&apos;silktest.insurancemobile:id/car_model&apos;]"/>
+    <ObjectMapEntry id="silktest insurancemobile id email" locator="//MobileTextField[@resource-id=&apos;silktest.insurancemobile:id/email&apos;]"/>
+    <ObjectMapEntry id="silktest insurancemobile id financial_info" locator="//MobileObject[@resource-id=&apos;silktest.insurancemobile:id/financial_info&apos;]"/>
+    <ObjectMapEntry id="silktest insurancemobile id password" locator="//MobileTextField[@resource-id=&apos;silktest.insurancemobile:id/password&apos;]"/>
+    <ObjectMapEntry id="silktest insurancemobile id radio_car" locator="//MobileObject[@resource-id=&apos;silktest.insurancemobile:id/radio_car&apos;]"/>
+    <ObjectMapEntry id="silktest insurancemobile id radio_male" locator="//MobileObject[@resource-id=&apos;silktest.insurancemobile:id/radio_male&apos;]"/>
+    <ObjectMapEntry id="silktest insurancemobile id rating_driving_record" locator="//MobileObject[@resource-id=&apos;silktest.insurancemobile:id/rating_driving_record&apos;]"/>
+    <ObjectMapEntry id="silktest insurancemobile id result" locator="//MobileObject[@resource-id=&apos;silktest.insurancemobile:id/result&apos;]"/>
+    <ObjectMapEntry id="silktest insurancemobile id submit" locator="//MobileObject[@resource-id=&apos;silktest.insurancemobile:id/submit&apos;]"/>
+    <ObjectMapEntry id="Submit" locator="//MobileObject[@label=&apos;Submit&apos;]"/>
+    <ObjectMapEntry id="Year" locator="//MobileTextField[@caption=&apos;Year&apos;]"/>
+    <ObjectMapEntry id="Your Instant Quote is 1300 0 every twelve months" locator="//MobileObject[@name=&apos;Your Instant Quote is 1300.0 every twelve months.&apos;]"/>
+    <ObjectMapEntry id="Zip Code" locator="//MobileTextField[@caption=&apos;Zip Code&apos;]"/>
+    <ObjectMapEntry id="Zip Code (Android)" locator="//MobileObject[@resource-id=&apos;silktest.insurancemobile:id/agent_search_zip&apos;]"/>
+    <ObjectMapEntry id="Zip Code (iOS)" locator="//MobileObject[@caption=&apos;Zip Code&apos;]"/>
+  </ObjectMapEntry>
+</ObjectMap>
