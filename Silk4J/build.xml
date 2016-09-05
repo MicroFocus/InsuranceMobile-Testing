@@ -1,56 +1,77 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project name="Mobile - InsuranceMobile (xDevice)" default="compile">
 
-  <property name="src" value="src" />
-  <property name="bin" value="build" />
-  <property name="output" value="output" />
-  <property name="lib" value="lib" />
-  <property name="buildlib" value="buildlib" />
+	<property name="src" value="src" />
+	<property name="bin" value="build" />
+	<property name="output" value="output" />
+	<property name="lib" value="lib" />
+	<property name="buildlib" value="buildlib" />
 
-  <path id="project.classpath">
-    <fileset dir="${lib}" includes="*.jar" excludes="*source*" />
-    <fileset dir="${buildlib}" includes="*.jar" excludes="*source*" />
-  </path>
+	<property environment="env" />
 
-  <target name="compile">
-    <delete dir="${output}" />
-    <mkdir dir="${output}" />
+	<path id="project.classpath">
+		<fileset dir="${lib}" includes="*.jar" excludes="*source*" />
+		<fileset dir="${buildlib}" includes="*.jar" excludes="*source*" />
+	</path>
 
-    <delete dir="${bin}" />
-    <mkdir dir="${bin}" />
+	<target name="compile">
+		<delete dir="${output}" />
+		<mkdir dir="${output}" />
 
-    <componentdef name="ecj" classname="org.eclipse.jdt.core.JDTCompilerAdapter" classpathref="project.classpath" />
-    <javac srcdir="${src}" destdir="${bin}" debug="true" source="1.8" target="1.8" encoding="utf-8" includeantruntime="false">
-      <compilerarg value="-parameters" />
-      <classpath refid="project.classpath" />
-      <ecj />
-    </javac>
+		<delete dir="${bin}" />
+		<mkdir dir="${bin}" />
 
-    <jar destfile="${output}/tests.jar" >
-      <fileset dir="${bin}" includes="**/*.class" />
-      <fileset dir="${src}" includes="**/*" excludes="**/*.java" />
-      <fileset dir="Object Maps" includes="**/*" erroronmissingdir="false" />
-      <fileset dir="Image Assets" includes="**/*" erroronmissingdir="false" />
-      <fileset dir="Verifications" includes="**/" erroronmissingdir="false" />
-      <fileset dir="Keyword Sequences" includes="**/" erroronmissingdir="false" />
-      <fileset dir="Keyword Driven Tests" includes="**/*" erroronmissingdir="false" />
-    </jar>
+		<componentdef name="ecj" classname="org.eclipse.jdt.core.JDTCompilerAdapter" classpathref="project.classpath" />
+		<javac srcdir="${src}" destdir="${bin}" debug="true" source="1.8" target="1.8" encoding="utf-8" includeantruntime="false">
+			<compilerarg value="-parameters" />
+			<classpath refid="project.classpath" />
+			<ecj />
+		</javac>
 
-    <copy todir="${output}" overwrite="true">
-      <fileset dir="${lib}" includes="*.jar" excludes="*source*" />
-    </copy>
-    <delete dir="${bin}" />
-  </target>
+		<jar destfile="${output}/tests.jar">
+			<fileset dir="${bin}" includes="**/*.class" />
+			<fileset dir="${src}" includes="**/*" excludes="**/*.java" />
+			<fileset dir="Object Maps" includes="**/*" erroronmissingdir="false" />
+			<fileset dir="Image Assets" includes="**/*" erroronmissingdir="false" />
+			<fileset dir="Verifications" includes="**/" erroronmissingdir="false" />
+			<fileset dir="Keyword Sequences" includes="**/" erroronmissingdir="false" />
+			<fileset dir="Keyword Driven Tests" includes="**/*" erroronmissingdir="false" />
+		</jar>
 
-  <target name="build.keyword.library" depends="compile">
-    <java classname="com.borland.silk.keyworddriven.library.docbuilder.DocBuilder" fork="true">
-      <classpath refid="project.classpath" />
-      
-      <arg value="Mobile - InsuranceMobile (xDevice)" />
-      <arg value="Silk4J" />
-      <arg value="${output}" />
-      <arg value="${output}/library.zip" />
-     </java>
-  </target>
-  
+		<copy todir="${output}" overwrite="true">
+			<fileset dir="${lib}" includes="*.jar" excludes="*source*" />
+		</copy>
+		<delete dir="${bin}" />
+	</target>
+
+	<target name="build.keyword.library" depends="compile">
+		<java classname="com.borland.silk.keyworddriven.library.docbuilder.DocBuilder" fork="true">
+			<classpath refid="project.classpath" />
+
+			<arg value="Mobile - InsuranceMobile (xDevice)" />
+			<arg value="Silk4J" />
+			<arg value="${output}" />
+			<arg value="${output}/library.zip" />
+		</java>
+	</target>
+
+	<target name="runTests" depends="compile">
+		<junit printsummary="true" showoutput="true">
+			<formatter type="xml" />
+			<formatter type="plain" usefile="false" />
+
+			<classpath>
+				<pathelement path="${output}/tests.jar" />
+				<pathelement path="${env.OPEN_AGENT_HOME}/JTF/silktest-jtf-nodeps.jar" />
+				<pathelement path="${env.OPEN_AGENT_HOME}/KeywordDrivenTesting/com.borland.silk.keyworddriven.engine.jar" />
+				<path refid="project.classpath" />
+			</classpath>
+
+			<batchtest>
+				<resources>
+					<zipfileset src="${output}/tests.jar" includes="**/*Suite.class"/>
+				</resources>
+			</batchtest>
+		</junit>
+	</target>
 </project>
